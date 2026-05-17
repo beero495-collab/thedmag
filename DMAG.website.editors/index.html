@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wsp3tk5sa1");
+</script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M7YRELSL01"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M7YRELSL01');
+</script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DMAG — Curated Digital Products for Creators & Entrepreneurs</title>
+<link rel="icon" type="image/png" href="assets/FAVICON.png"/>
+<meta name="description" content="Hand-picked AI tools, marketing systems, and digital resources for creators and entrepreneurs building online."/>
+<meta property="og:title" content="DMAG — Curated Digital Products"/>
+<meta property="og:description" content="Real tools worth your time. Curated for creators building online."/>
+<meta property="og:type" content="website"/>
+<!-- ANALYTICS PLACEHOLDER: Replace with your GA4/Plausible/Meta Pixel -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA4_ID"></script> -->
+<!-- <script>!function(f,b,e,v,n,t,s){...}(window,...)</script> META PIXEL -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+/* ── TOKENS ── */
+:root {
+  --black:   #080808;
+  --black2:  #0d0d0d;
+  --black3:  #141414;
+  --black4:  #1c1c1c;
+  --border:  rgba(255,255,255,0.06);
+  --border-o:rgba(255,107,0,0.22);
+  --orange:  #FF6B00;
+  --o-dim:   rgba(255,107,0,0.10);
+  --o-glow:  rgba(255,107,0,0.05);
+  --white:   #ffffff;
+  --gray:    #7a7a7a;
+  --gray2:   #444444;
+  --text:    #c8c8c8;
+  --fd: 'Bebas Neue',sans-serif;
+  --fb: 'DM Sans',sans-serif;
+  --fm: 'DM Mono',monospace;
+  --r: 14px; --rs: 8px;
+  --ease: cubic-bezier(0.4,0,0.2,1);
+  --t: 0.3s var(--ease);
+  --t-slow: 0.5s var(--ease);
+}
+
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; }
+
+body {
+  background: var(--black);
+  color: var(--text);
+  font-family: var(--fb);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Grain texture */
+body::after {
+  content:'';
+  position:fixed; inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events:none; z-index:9999; opacity:0.5;
+}
+
+::-webkit-scrollbar { width:3px; }
+::-webkit-scrollbar-track { background:var(--black); }
+::-webkit-scrollbar-thumb { background:var(--orange); border-radius:2px; }
+
+/* ── LAYOUT ── */
+.container { max-width:1140px; margin:0 auto; padding:0 24px; }
+section { position:relative; z-index:1; }
+.eyebrow {
+  font-family:var(--fm); font-size:10px; letter-spacing:0.18em;
+  text-transform:uppercase; color:var(--orange); display:block; margin-bottom:14px;
+}
+
+/* ── NAV ── */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  height:60px; padding:0 24px;
+  display:flex; align-items:center; justify-content:space-between;
+  background:rgba(8,8,8,0.88); backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--border);
+  transition:background var(--t);
+}
+nav.scrolled { background:rgba(8,8,8,0.97); }
+
+.nav-logo { font-family:var(--fd); font-size:26px; color:var(--orange); letter-spacing:2px; text-decoration:none; }
+
+.nav-links { display:flex; align-items:center; gap:28px; list-style:none; }
+.nav-links a { color:var(--gray); text-decoration:none; font-size:13px; font-weight:500; letter-spacing:0.02em; transition:color var(--t); }
+.nav-links a:hover { color:var(--white); }
+.nav-cta {
+  background:var(--orange)!important; color:var(--white)!important;
+  padding:7px 18px; border-radius:var(--rs); font-weight:600!important; font-size:12px!important;
+  transition:opacity var(--t)!important;
+}
+.nav-cta:hover { opacity:0.82; }
+
+.nav-mob { display:none; background:none; border:none; cursor:pointer; flex-direction:column; gap:4px; padding:4px; }
+.nav-mob span { display:block; width:20px; height:1.5px; background:var(--white); border-radius:2px; transition:var(--t); }
+
+/* ── BTNS ── */
+.btn {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:13px 26px; border-radius:var(--rs);
+  font-family:var(--fb); font-size:14px; font-weight:600;
+  cursor:pointer; text-decoration:none; border:none;
+  transition:all var(--t);
+}
+.btn-p { background:var(--orange); color:var(--white); }
+.btn-p:hover { background:#ff7c1a; transform:translateY(-1px); box-shadow:0 8px 28px rgba(255,107,0,0.28); }
+.btn-g { background:transparent; color:var(--white); border:1px solid var(--border); }
+.btn-g:hover { border-color:var(--border-o); color:var(--orange); }
+.btn-full { width:100%; justify-content:center; padding:14px; }
+
+/* ── HERO ── */
+#hero {
+  min-height:100vh; display:flex; align-items:center;
+  padding:96px 0 72px; position:relative; overflow:hidden;
+}
+
+.hero-ambient {
+  position:absolute; top:40%; left:50%; transform:translate(-50%,-50%);
+  width:900px; height:600px;
+  background:radial-gradient(ellipse at center, rgba(255,107,0,0.055) 0%, transparent 68%);
+  pointer-events:none;
+}
+
+.hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
+
+.hero-badge {
+  display:inline-flex; align-items:center; gap:7px;
+  background:var(--o-dim); border:1px solid var(--border-o);
+  border-radius:999px; padding:5px 14px;
+  font-size:11px; font-weight:600; color:var(--orange);
+  letter-spacing:0.08em; text-transform:uppercase; margin-bottom:26px;
+}
+.hero-pulse {
+  width:5px; height:5px; background:var(--orange); border-radius:50%;
+  animation:pulse 2.2s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1);} 50%{opacity:0.35;transform:scale(0.65);} }
+
+.hero-h1 {
+  font-family:var(--fd); font-size:clamp(50px,6vw,84px);
+  line-height:0.91; letter-spacing:0.02em; color:var(--white); margin-bottom:22px;
+}
+.hero-h1 em { color:var(--orange); font-style:normal; }
+
+.hero-p { font-size:16px; color:var(--gray); line-height:1.78; max-width:420px; margin-bottom:36px; font-weight:300; }
+
+.hero-btns { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:44px; }
+
+.hero-stats { display:flex; gap:28px; padding-top:32px; border-top:1px solid var(--border); }
+.hs-num { font-family:var(--fd); font-size:28px; color:var(--white); letter-spacing:0.04em; line-height:1; }
+.hs-label { font-size:10px; color:var(--gray); font-weight:500; letter-spacing:0.06em; text-transform:uppercase; margin-top:3px; }
+
+/* Hero visual */
+.hero-visual { position:relative; display:flex; justify-content:center; }
+.hero-card {
+  background:var(--black3); border:1px solid var(--border);
+  border-radius:18px; padding:22px; width:100%; max-width:340px;
+  position:relative; overflow:hidden;
+  box-shadow:0 24px 64px rgba(0,0,0,0.5);
+}
+.hero-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,107,0,0.5),transparent);
+}
+.hc-bar { display:flex; gap:5px; margin-bottom:18px; }
+.hc-bar span { width:9px; height:9px; border-radius:50%; }
+.hc-bar span:nth-child(1){background:#ff5f57;} .hc-bar span:nth-child(2){background:#febc2e;} .hc-bar span:nth-child(3){background:#28c840;}
+.hc-tag { font-family:var(--fm); font-size:10px; color:var(--gray2); margin-bottom:14px; }
+.hc-row {
+  display:flex; align-items:center; gap:11px; padding:11px;
+  background:var(--black4); border-radius:8px; margin-bottom:7px;
+  border:1px solid var(--border); transition:border-color var(--t);
+}
+.hc-row:hover { border-color:var(--border-o); }
+.hc-ico { width:32px; height:32px; border-radius:7px; background:var(--o-dim); display:flex; align-items:center; justify-content:center; font-size:14px; flex-shrink:0; }
+.hc-name { font-size:12px; font-weight:600; color:var(--white); }
+.hc-sub { font-size:10px; color:var(--gray); margin-top:1px; }
+.hc-pill { margin-left:auto; font-family:var(--fm); font-size:9px; color:var(--orange); background:var(--o-dim); padding:2px 7px; border-radius:4px; flex-shrink:0; }
+.hero-float {
+  position:absolute; top:-14px; right:-14px;
+  background:var(--black3); border:1px solid var(--border-o); border-radius:10px;
+  padding:11px 14px; box-shadow:0 8px 28px rgba(0,0,0,0.6);
+}
+.hf-n { font-family:var(--fd); font-size:20px; color:var(--orange); line-height:1; }
+.hf-l { font-size:9px; color:var(--gray); text-transform:uppercase; letter-spacing:0.1em; margin-top:2px; }
+
+/* ── TICKER ── */
+.ticker {
+  border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+  padding:11px 0; overflow:hidden; background:var(--black2);
+}
+.ticker-inner { display:flex; width:max-content; animation:tick 32s linear infinite; }
+.ticker-inner:hover { animation-play-state:paused; }
+.t-item { display:flex; align-items:center; gap:7px; padding:0 24px; font-size:12px; color:var(--gray); white-space:nowrap; }
+.t-item b { color:var(--orange); font-weight:600; }
+@keyframes tick { from{transform:translateX(0);} to{transform:translateX(-50%);} }
+
+/* ── EMAIL TOP ── */
+#email-top { padding:64px 0; background:var(--black2); border-bottom:1px solid var(--border); }
+.email-c { max-width:480px; margin:0 auto; text-align:center; }
+.email-c h2 { font-family:var(--fd); font-size:clamp(28px,3.5vw,40px); color:var(--white); letter-spacing:0.03em; line-height:1; margin-bottom:10px; }
+.email-c p { color:var(--gray); font-size:14px; margin-bottom:24px; font-weight:300; line-height:1.7; }
+.form-line { display:flex; gap:8px; max-width:400px; margin:0 auto 12px; }
+.fi {
+  flex:1; background:var(--black3); border:1px solid var(--border);
+  border-radius:var(--rs); padding:12px 15px;
+  font-family:var(--fb); font-size:13px; color:var(--white);
+  outline:none; transition:border-color var(--t);
+}
+.fi::placeholder { color:var(--gray2); }
+.fi:focus { border-color:var(--orange); }
+.form-note { font-size:11px; color:var(--gray2); display:flex; align-items:center; justify-content:center; gap:5px; }
+
+/* success */
+.f-success { display:none; padding:18px; background:var(--o-dim); border:1px solid var(--border-o); border-radius:var(--r); text-align:center; }
+.f-success.show { display:block; }
+.f-success h3 { font-family:var(--fd); font-size:22px; color:var(--orange); letter-spacing:0.05em; margin-bottom:5px; }
+.f-success p { font-size:13px; color:var(--gray); font-weight:300; }
+
+/* ── PRODUCTS ── */
+#products { padding:88px 0; }
+
+.sec-head { display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:40px; gap:20px; }
+.sec-title { font-family:var(--fd); font-size:clamp(30px,3.8vw,48px); color:var(--white); letter-spacing:0.03em; line-height:1; }
+.sec-sub { font-size:13px; color:var(--gray); max-width:300px; font-weight:300; line-height:1.6; }
+
+/* Filters */
+.cat-bar { display:flex; gap:7px; flex-wrap:wrap; margin-bottom:36px; }
+.cf {
+  padding:6px 14px; border-radius:999px; font-size:12px; font-weight:500;
+  cursor:pointer; border:1px solid var(--border); background:transparent;
+  color:var(--gray); transition:all var(--t); font-family:var(--fb);
+}
+.cf:hover, .cf.active { background:var(--o-dim); border-color:var(--border-o); color:var(--orange); }
+
+/* Grid */
+.p-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+
+/* ── PRODUCT CARD ── */
+.pc {
+  background:var(--black3);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  overflow:hidden;
+  display:flex; flex-direction:column;
+  transition:border-color var(--t-slow), transform var(--t-slow), box-shadow var(--t-slow);
+  position:relative;
+  cursor:pointer;
+}
+.pc::before {
+  content:''; position:absolute; inset:0; border-radius:var(--r);
+  box-shadow:0 0 0 0 rgba(255,107,0,0);
+  transition:box-shadow var(--t-slow); pointer-events:none; z-index:2;
+}
+.pc:hover { border-color:var(--border-o); transform:translateY(-4px); box-shadow:0 20px 56px rgba(0,0,0,0.45); }
+.pc:hover::before { box-shadow:0 0 0 1px rgba(255,107,0,0.12) inset; }
+
+/* Thumb */
+.pc-thumb {
+  position:relative; overflow:hidden;
+  height:148px; background:var(--black4);
+  border-bottom:1px solid var(--border);
+  flex-shrink:0;
+}
+
+.pc-thumb-img {
+  width:100%; height:100%; object-fit:cover;
+  transition:transform var(--t-slow), opacity var(--t-slow);
+  display:block;
+}
+.pc:hover .pc-thumb-img { transform:scale(1.035); }
+
+/* Emoji fallback */
+.pc-emoji {
+  position:absolute; inset:0;
+  display:flex; align-items:center; justify-content:center;
+  font-size:40px;
+  background:radial-gradient(circle at center, var(--o-glow) 0%, transparent 70%);
+  transition:opacity var(--t-slow);
+}
+
+/* Video overlay */
+.pc-video {
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; opacity:0;
+  transition:opacity 0.7s var(--ease);
+}
+.pc-video.playing { opacity:1; }
+
+/* Badge */
+.pc-badge {
+  position:absolute; top:10px; left:10px; z-index:3;
+  background:var(--orange); color:var(--white);
+  font-size:9px; font-weight:700; letter-spacing:0.08em;
+  text-transform:uppercase; padding:3px 8px; border-radius:4px;
+}
+
+/* Gradient bottom of thumb */
+.pc-thumb::after {
+  content:''; position:absolute; bottom:0; left:0; right:0; height:40px;
+  background:linear-gradient(to top, var(--black3), transparent);
+  pointer-events:none;
+}
+
+/* Body */
+.pc-body { padding:18px; flex:1; display:flex; flex-direction:column; }
+.pc-type { font-family:var(--fm); font-size:10px; color:var(--orange); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:7px; }
+.pc-name { font-size:15px; font-weight:600; color:var(--white); line-height:1.3; margin-bottom:8px; }
+.pc-desc { font-size:12px; color:var(--gray); line-height:1.65; flex:1; margin-bottom:16px; font-weight:300; }
+
+/* Footer */
+.pc-foot {
+  display:flex; align-items:center; justify-content:space-between;
+  padding-top:14px; border-top:1px solid var(--border);
+}
+.pc-tags { display:flex; gap:4px; flex-wrap:wrap; }
+.pc-tag-pill {
+  font-size:9px; color:var(--gray2); font-family:var(--fm);
+  background:var(--black4); border:1px solid var(--border);
+  padding:2px 7px; border-radius:4px;
+}
+.pc-cta {
+  padding:7px 14px; background:var(--o-dim);
+  border:1px solid var(--border-o); border-radius:6px;
+  font-size:11px; font-weight:600; color:var(--orange);
+  text-decoration:none; transition:all var(--t); white-space:nowrap;
+  display:flex; align-items:center; gap:4px;
+  flex-shrink:0;
+}
+.pc-cta:hover { background:var(--orange); color:var(--white); border-color:var(--orange); }
+.pc-cta:hover .cta-arrow { transform:translateX(2px); }
+.cta-arrow { display:inline-block; transition:transform var(--t); }
+
+/* ── TRUST ── */
+#trust { padding:88px 0; background:var(--black2); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+.trust-g { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
+.trust-content h2 { font-family:var(--fd); font-size:clamp(30px,3.8vw,46px); color:var(--white); letter-spacing:0.03em; line-height:1; margin-bottom:18px; }
+.trust-content p { font-size:15px; color:var(--gray); line-height:1.8; margin-bottom:28px; font-weight:300; }
+.t-points { display:flex; flex-direction:column; gap:14px; }
+.t-point { display:flex; align-items:flex-start; gap:12px; }
+.t-ico { width:34px; height:34px; border-radius:8px; background:var(--o-dim); border:1px solid var(--border-o); display:flex; align-items:center; justify-content:center; font-size:15px; flex-shrink:0; margin-top:1px; }
+.t-txt strong { display:block; font-size:14px; color:var(--white); font-weight:600; margin-bottom:2px; }
+.t-txt span { font-size:12px; color:var(--gray); font-weight:300; line-height:1.5; }
+.trust-stats { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.ts-card { background:var(--black3); border:1px solid var(--border); border-radius:var(--r); padding:24px; text-align:center; transition:border-color var(--t); }
+.ts-card:hover { border-color:var(--border-o); }
+.ts-n { font-family:var(--fd); font-size:36px; color:var(--orange); letter-spacing:0.04em; line-height:1; margin-bottom:6px; }
+.ts-l { font-size:12px; color:var(--gray); }
+
+/* ── EMAIL BOTTOM ── */
+#email-bottom { padding:72px 0; background:var(--black); border-top:1px solid var(--border); position:relative; overflow:hidden; }
+#email-bottom::before { content:''; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:500px; height:350px; background:radial-gradient(ellipse, rgba(255,107,0,0.04) 0%, transparent 70%); pointer-events:none; }
+.eb-inner { max-width:520px; margin:0 auto; text-align:center; position:relative; z-index:1; }
+.eb-inner h2 { font-family:var(--fd); font-size:clamp(32px,4.5vw,56px); color:var(--white); letter-spacing:0.03em; line-height:0.93; margin-bottom:14px; }
+.eb-inner h2 em { color:var(--orange); font-style:normal; }
+.eb-inner > p { font-size:15px; color:var(--gray); margin-bottom:28px; font-weight:300; line-height:1.7; }
+.form-stack { display:flex; flex-direction:column; gap:8px; max-width:380px; margin:0 auto 12px; }
+.form-row { display:flex; gap:8px; }
+.fi-full {
+  width:100%; background:var(--black3); border:1px solid var(--border);
+  border-radius:var(--rs); padding:13px 16px;
+  font-family:var(--fb); font-size:14px; color:var(--white);
+  outline:none; transition:border-color var(--t);
+}
+.fi-full::placeholder { color:var(--gray2); }
+.fi-full:focus { border-color:var(--orange); }
+
+/* ── FAQ ── */
+#faq { padding:88px 0; }
+.faq-g { display:grid; grid-template-columns:1fr 2fr; gap:72px; align-items:start; }
+.faq-side h2 { font-family:var(--fd); font-size:clamp(30px,3.8vw,46px); color:var(--white); letter-spacing:0.03em; line-height:1; margin-bottom:14px; }
+.faq-side p { font-size:14px; color:var(--gray); font-weight:300; line-height:1.7; }
+.faq-list { display:flex; flex-direction:column; }
+.faq-item { border-bottom:1px solid var(--border); cursor:pointer; }
+.faq-q { display:flex; align-items:center; justify-content:space-between; padding:20px 0; gap:18px; }
+.faq-q span { font-size:15px; font-weight:500; color:var(--text); line-height:1.4; transition:color var(--t); }
+.faq-item:hover .faq-q span { color:var(--white); }
+.faq-ico { width:22px; height:22px; border:1px solid var(--border); border-radius:5px; display:flex; align-items:center; justify-content:center; color:var(--orange); font-size:13px; flex-shrink:0; font-weight:600; transition:all var(--t); }
+.faq-item.open .faq-ico { background:var(--o-dim); border-color:var(--border-o); transform:rotate(45deg); }
+.faq-a { max-height:0; overflow:hidden; transition:max-height 0.38s ease, padding 0.38s ease; }
+.faq-item.open .faq-a { max-height:280px; padding-bottom:18px; }
+.faq-a p { font-size:13px; color:var(--gray); line-height:1.8; font-weight:300; }
+
+/* ── FOOTER ── */
+footer { border-top:1px solid var(--border); padding:44px 0 28px; }
+.ft { display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; margin-bottom:36px; }
+.f-brand { font-family:var(--fd); font-size:26px; color:var(--orange); letter-spacing:2px; margin-bottom:10px; }
+.f-desc { font-size:12px; color:var(--gray); line-height:1.7; max-width:200px; font-weight:300; margin-bottom:16px; }
+.f-soc { display:flex; gap:8px; flex-wrap:wrap; }
+.f-soc a { font-size:12px; color:var(--gray); text-decoration:none; padding:5px 11px; border:1px solid var(--border); border-radius:5px; transition:all var(--t); }
+.f-soc a:hover { border-color:var(--border-o); color:var(--orange); }
+.f-col-title { font-size:11px; font-weight:700; color:var(--white); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:14px; }
+.f-links { list-style:none; display:flex; flex-direction:column; gap:8px; }
+.f-links a { font-size:12px; color:var(--gray); text-decoration:none; transition:color var(--t); font-weight:300; }
+.f-links a:hover { color:var(--orange); }
+.f-bottom { display:flex; align-items:center; justify-content:space-between; padding-top:24px; border-top:1px solid var(--border); flex-wrap:wrap; gap:10px; }
+.f-copy { font-size:11px; color:var(--gray2); font-family:var(--fm); }
+.f-legal { display:flex; gap:16px; }
+.f-legal a { font-size:11px; color:var(--gray2); text-decoration:none; transition:color var(--t); }
+.f-legal a:hover { color:var(--gray); }
+
+/* ── FADE UP ── */
+.fu { opacity:0; transform:translateY(18px); transition:opacity 0.55s ease, transform 0.55s ease; }
+.fu.in { opacity:1; transform:translateY(0); }
+
+/* ════════════════════════════════════════
+   RESPONSIVE SYSTEM
+   Desktop  → > 1024px   (default styles above)
+   Tablet   → 768–1024px
+   Mobile L → 480–767px
+   Mobile S → < 480px
+════════════════════════════════════════ */
+
+/* ── TABLET (768px – 1024px) ── */
+@media(max-width:1024px){
+  /* Nav */
+  .nav-links { gap:18px; }
+  .nav-links a { font-size:12px; }
+
+  /* Hero */
+  .hero-grid { gap:36px; }
+  .hero-h1 { font-size:clamp(44px,5.5vw,68px); }
+  .hero-p { font-size:15px; max-width:100%; }
+  .hero-card { max-width:300px; }
+  .hero-float { top:-10px; right:-10px; }
+
+  /* Products */
+  .p-grid { grid-template-columns:repeat(2,1fr); gap:16px; }
+
+  /* Trust */
+  .trust-g { gap:36px; }
+
+  /* FAQ */
+  .faq-g { gap:48px; }
+
+  /* Footer */
+  .ft { grid-template-columns:1fr 1fr; gap:32px; }
+
+  /* Email forms */
+  .form-stack { max-width:100%; }
+  .eb-inner { max-width:100%; padding:0 8px; }
+}
+
+/* ── TABLET PORTRAIT / LARGE MOBILE (768px – 900px) ── */
+@media(max-width:900px){
+  /* Nav — switch to hamburger */
+  .nav-links {
+    display:none;
+    flex-direction:column;
+    position:fixed;
+    top:60px; left:0; right:0;
+    background:rgba(8,8,8,0.98);
+    backdrop-filter:blur(24px);
+    padding:24px;
+    border-bottom:1px solid var(--border);
+    gap:6px;
+    z-index:99;
+  }
+  .nav-links.open { display:flex; }
+  .nav-links li { width:100%; }
+  .nav-links a {
+    display:block; padding:12px 16px;
+    font-size:15px; border-radius:var(--rs);
+    transition:background var(--t), color var(--t);
+  }
+  .nav-links a:hover { background:var(--black3); color:var(--white); }
+  .nav-cta {
+    display:block; text-align:center;
+    padding:12px 16px !important;
+    font-size:14px !important;
+    margin-top:8px;
+  }
+  .nav-mob { display:flex; }
+
+  /* Hero */
+  .hero-grid { grid-template-columns:1fr; gap:0; }
+  .hero-visual { display:none; }
+  #hero { padding:80px 0 56px; min-height:auto; }
+  .hero-stats { gap:20px; }
+  .hero-badge { font-size:10px; }
+
+  /* Section header */
+  .sec-head { flex-direction:column; align-items:flex-start; gap:12px; }
+  .sec-sub { max-width:100%; }
+
+  /* Trust */
+  .trust-g { grid-template-columns:1fr; gap:40px; }
+  .trust-stats { grid-template-columns:repeat(2,1fr); }
+
+  /* FAQ */
+  .faq-g { grid-template-columns:1fr; gap:32px; }
+  .faq-q span { font-size:14px; }
+
+  /* Email top */
+  .form-line { gap:8px; }
+}
+
+/* ── MOBILE LANDSCAPE + LARGE PHONES (480px – 767px) ── */
+@media(max-width:767px){
+  /* Container */
+  .container { padding:0 20px; }
+
+  /* Nav */
+  nav { height:56px; padding:0 20px; }
+  .nav-logo { font-size:22px; }
+
+  /* Hero */
+  #hero { padding:72px 0 48px; }
+  .hero-h1 { font-size:clamp(38px,9vw,52px); line-height:0.93; margin-bottom:18px; }
+  .hero-p { font-size:14px; line-height:1.7; margin-bottom:28px; }
+  .hero-badge { font-size:10px; padding:4px 12px; margin-bottom:20px; }
+  .hero-btns { gap:8px; margin-bottom:32px; }
+  .hero-btns .btn { width:100%; justify-content:center; }
+  .hero-stats { gap:0; justify-content:space-between; padding-top:24px; }
+  .hero-stats > div { flex:1; text-align:center; padding:0 8px; }
+  .hero-stats > div:not(:last-child) { border-right:1px solid var(--border); }
+  .hs-num { font-size:22px; }
+  .hs-label { font-size:9px; }
+
+  /* Products */
+  #products { padding:56px 0; }
+  .p-grid { grid-template-columns:repeat(2,1fr); gap:12px; }
+  .pc-thumb { height:110px; }
+  .pc-body { padding:14px; }
+  .pc-name { font-size:13px; }
+  .pc-desc { font-size:11px; margin-bottom:12px; }
+  .pc-foot { flex-direction:column; align-items:flex-start; gap:8px; }
+  .pc-cta { width:100%; justify-content:center; padding:8px 14px; font-size:11px; }
+  .pc-tags { display:none; } /* hide tags on small screens to save space */
+
+  /* Category filter */
+  .cat-bar { gap:6px; }
+  .cf { padding:5px 12px; font-size:11px; }
+
+  /* Trust */
+  #trust { padding:56px 0; }
+  .trust-stats { grid-template-columns:repeat(2,1fr); gap:10px; }
+  .ts-card { padding:18px 14px; }
+  .ts-n { font-size:28px; }
+
+  /* Email top */
+  #email-top { padding:48px 0; }
+  .email-c h2 { font-size:clamp(26px,7vw,36px); }
+  .email-c p { font-size:13px; }
+  .form-line { flex-direction:column; gap:8px; max-width:100%; }
+  .form-line .btn { width:100%; justify-content:center; }
+
+  /* Email bottom */
+  #email-bottom { padding:56px 0; }
+  .eb-inner h2 { font-size:clamp(30px,8vw,44px); line-height:0.95; }
+  .eb-inner > p { font-size:13px; margin-bottom:20px; }
+  .form-row { flex-direction:column; gap:8px; }
+  .form-stack { max-width:100%; }
+
+  /* FAQ */
+  #faq { padding:56px 0; }
+  .faq-q { padding:16px 0; }
+  .faq-q span { font-size:13px; }
+
+  /* Footer */
+  .ft { grid-template-columns:1fr 1fr; gap:24px; margin-bottom:28px; }
+  .f-brand { font-size:22px; }
+  .f-desc { max-width:100%; }
+  footer { padding:36px 0 24px; }
+
+  /* Buttons */
+  .btn { font-size:13px; padding:12px 22px; }
+}
+
+/* ── SMALL MOBILE (< 480px) ── */
+@media(max-width:479px){
+  /* Container */
+  .container { padding:0 16px; }
+
+  /* Nav */
+  nav { padding:0 16px; }
+
+  /* Hero */
+  .hero-h1 { font-size:clamp(34px,10vw,44px); }
+  .hero-stats { flex-wrap:wrap; gap:12px; }
+  .hero-stats > div { flex:1 1 calc(33% - 8px); text-align:center; border-right:none !important; }
+  .hs-num { font-size:20px; }
+
+  /* Products — single column on very small screens */
+  .p-grid { grid-template-columns:1fr; gap:12px; }
+  .pc-thumb { height:130px; }
+  .pc-body { padding:16px; }
+  .pc-name { font-size:14px; }
+  .pc-desc { font-size:12px; }
+  .pc-foot { flex-direction:row; align-items:center; }
+  .pc-cta { width:auto; }
+
+  /* Trust stats */
+  .trust-stats { grid-template-columns:1fr 1fr; gap:8px; }
+  .ts-card { padding:16px 12px; }
+  .ts-n { font-size:24px; }
+  .ts-l { font-size:11px; }
+
+  /* Forms */
+  .fi, .fi-full {
+    font-size:16px; /* prevent iOS zoom on focus */
+    padding:13px 14px;
+  }
+
+  /* Footer */
+  .ft { grid-template-columns:1fr; gap:28px; }
+  .f-bottom { flex-direction:column; align-items:flex-start; gap:8px; }
+  .f-legal { gap:12px; }
+
+  /* Email sections */
+  .email-c { padding:0 4px; }
+  .eb-inner { padding:0 4px; }
+
+  /* Ticker — slower on mobile */
+  .ticker-inner { animation-duration:44s; }
+
+  /* FAQ */
+  .faq-q span { font-size:13px; line-height:1.5; }
+
+  /* Buttons */
+  .btn { width:100%; justify-content:center; }
+  .hero-btns .btn-g { background:transparent; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">DMAG</a>
+  <ul class="nav-links">
+    <li><a href="#products">Products</a></li>
+    <li><a href="#trust">About</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#email-bottom" class="nav-cta">Weekly Picks</a></li>
+  </ul>
+  <button class="nav-mob" onclick="toggleNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-ambient"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge"><div class="hero-pulse"></div>Curated Digital Products</div>
+        <h1 class="hero-h1">REAL TOOLS.<br/>REAL<br/><em>RESULTS.</em></h1>
+        <p class="hero-p">The internet is full of digital products. Most aren't worth your time. DMAG cuts through the noise — only tools we'd use ourselves.</p>
+        <div class="hero-btns">
+          <a href="#products" class="btn btn-p">Browse Products →</a>
+          <a href="#email-bottom" class="btn btn-g">Get Weekly Picks</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="hs-num">5+</div><div class="hs-label">Curated Tools</div></div>
+          <div><div class="hs-num">Weekly</div><div class="hs-label">New Picks</div></div>
+          <div><div class="hs-num">Zero</div><div class="hs-label">Fluff</div></div>
+        </div>
+      </div>
+     
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <div class="t-item">🤖 <b>AI Tools</b> &nbsp;·&nbsp;</div>
+    <div class="t-item">📊 <b>Marketing Systems</b> &nbsp;·&nbsp;</div>
+    <div class="t-item">⚡ <b>Automation Software</b> &nbsp;·&nbsp;</div>
+    <div class="t-item">💼 <b>Business Courses</b> &nbsp;·&nbsp;</div>
+    <div class="t-item">🚀 <b>Creator Economy</b> &nbsp;·&nbsp;</div>
+    <div class="t-item">🎯 <b>No Fluff. Ever.</b> &nbsp;·&nbsp;</div>
+    <div class="t-item">🛠 <b>Productivity</b> &nbsp;·&nbsp;</div>
+    <div class="t-item">🤖 <b>AI Tools</b> &nbsp;·&nbsp;</div>
+    <div class="t-item">📊 <b>Marketing Systems</b> &nbsp;·&nbsp;</div>
+    <div class="t-item">⚡ <b>Automation Software</b> &nbsp;·&nbsp;</div>
+    <div class="t-item">💼 <b>Business Courses</b> &nbsp;·&nbsp;</div>
+    <div class="t-item">🚀 <b>Creator Economy</b> &nbsp;·&nbsp;</div>
+    <div class="t-item">🎯 <b>No Fluff. Ever.</b> &nbsp;·&nbsp;</div>
+    <div class="t-item">🛠 <b>Productivity</b> &nbsp;·&nbsp;</div>
+  </div>
+</div>
+
+<!-- EMAIL TOP -->
+<section id="email-top">
+  <div class="container">
+    <div class="email-c fu">
+      <span class="eyebrow">DMAG Weekly Picks</span>
+      <h2>ONE EMAIL.<br/>REAL TOOLS.</h2>
+      <p>Curated AI tools and digital resources — delivered weekly. No spam, no fluff.</p>
+      <div id="ft-wrap">
+        <form onsubmit="handleForm(event,'top')">
+          <input type="hidden" name="source" value="website_top"/>
+          <input type="hidden" name="campaign" value="dmag_weekly"/>
+          <div class="form-line">
+            <input type="email" name="email" class="fi" placeholder="your@email.com" required/>
+            <button type="submit" class="btn btn-p">Join →</button>
+          </div>
+        </form>
+        <p class="form-note">🔒 No spam. One click to unsubscribe.</p>
+      </div>
+      <div class="f-success" id="fs-top"><h3>YOU'RE ON THE LIST.</h3><p>Weekly picks coming your way.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="container">
+    <div class="sec-head fu">
+      <div>
+        <span class="eyebrow">Hand-Picked</span>
+        <h2 class="sec-title">THIS WEEK'S PICKS</h2>
+      </div>
+      <p class="sec-sub">Reviewed before listed. Quality first, always.</p>
+    </div>
+    <div class="cat-bar fu">
+      <button class="cf active" onclick="filterCat('all',this)">All</button>
+      <button class="cf" onclick="filterCat('AI Tools',this)">AI Tools</button>
+      <button class="cf" onclick="filterCat('Business Software',this)">Software</button>
+      <button class="cf" onclick="filterCat('Courses',this)">Courses</button>
+      <button class="cf" onclick="filterCat('Learning',this)">Learning</button>
+    </div>
+    <div class="p-grid fu" id="pgrid"></div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section id="trust">
+  <div class="container">
+    <div class="trust-g">
+      <div class="trust-content fu">
+        <span class="eyebrow">Why DMAG</span>
+        <h2>CURATED,<br/>NOT COLLECTED</h2>
+        <p>Most affiliate sites throw everything at the wall. DMAG doesn't. Simple filter: would we actually use this? If not — it doesn't make the list.</p>
+        <div class="t-points">
+          <div class="t-point"><div class="t-ico">🔍</div><div class="t-txt"><strong>Reviewed Before Listed</strong><span>No product appears without going through quality checks first.</span></div></div>
+          <div class="t-point"><div class="t-ico">🎯</div><div class="t-txt"><strong>Creator-First Focus</strong><span>Only tools relevant to people building online.</span></div></div>
+          <div class="t-point"><div class="t-ico">🔄</div><div class="t-txt"><strong>Updated Regularly</strong><span>The catalog keeps up with what's actually working.</span></div></div>
+          <div class="t-point"><div class="t-ico">💬</div><div class="t-txt"><strong>Honest Descriptions</strong><span>No hype. No fake urgency. Just what the tool does.</span></div></div>
+        </div>
+      </div>
+      <div class="trust-stats fu">
+        <div class="ts-card"><div class="ts-n">5+</div><div class="ts-l">Products Reviewed</div></div>
+        <div class="ts-card"><div class="ts-n">Weekly</div><div class="ts-l">New Additions</div></div>
+        <div class="ts-card"><div class="ts-n">100%</div><div class="ts-l">Digital Products</div></div>
+        <div class="ts-card"><div class="ts-n">Zero</div><div class="ts-l">Fake Reviews</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMAIL BOTTOM -->
+<section id="email-bottom">
+  <div class="container">
+    <div class="eb-inner fu">
+      <span class="eyebrow">Stay in the loop</span>
+      <h2>DMAG<br/><em>WEEKLY</em><br/>PICKS</h2>
+      <p>One email per week. Already filtered so you don't have to.</p>
+      <div id="fb-wrap">
+        <form onsubmit="handleForm(event,'bottom')">
+          <input type="hidden" name="source" value="website_bottom"/>
+          <input type="hidden" name="campaign" value="dmag_weekly"/>
+          <div class="form-stack">
+            <div class="form-row">
+              <input type="text" name="name" class="fi-full" placeholder="First name" style="flex:1"/>
+              <input type="email" name="email" class="fi-full" placeholder="your@email.com" style="flex:2" required/>
+            </div>
+            <button type="submit" class="btn btn-p btn-full">Get Weekly Picks →</button>
+          </div>
+        </form>
+        <p class="form-note" style="margin-top:12px;">🔒 No spam. One click to unsubscribe.</p>
+      </div>
+      <div class="f-success" id="fs-bottom"><h3>WELCOME.</h3><p>First picks coming your way this week.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-g">
+      <div class="faq-side fu">
+        <span class="eyebrow">Questions</span>
+        <h2>GOOD<br/>QUESTIONS.</h2>
+        <p>Honest answers to what people actually ask about DMAG.</p>
+      </div>
+      <div class="faq-list fu">
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>What is DMAG and how does it work?</span><div class="faq-ico">+</div></div><div class="faq-a"><p>DMAG is a curated digital product discovery platform. We research and hand-pick AI tools, marketing systems, and digital business resources — then present them in one clean place. We earn a small affiliate commission if you buy, at no extra cost to you.</p></div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>How do you choose which products to feature?</span><div class="faq-ico">+</div></div><div class="faq-a"><p>Simple filter: would we actually use this ourselves? If yes, and if it's relevant to creators or entrepreneurs building online — it makes the list. Commission size is not the deciding factor.</p></div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>What's in the weekly email?</span><div class="faq-ico">+</div></div><div class="faq-a"><p>One email per week. One featured tool or resource, a short honest take on why it matters. No promotional filler. Unsubscribe with one click anytime.</p></div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Are these products beginner-friendly?</span><div class="faq-ico">+</div></div><div class="faq-a"><p>Most are, yes. The descriptions tell you who each product is actually for. We try to be specific so you don't waste time on something that isn't right for your level.</p></div></div>
+        <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span>Is there any cost to browse DMAG?</span><div class="faq-ico">+</div></div><div class="faq-a"><p>None. DMAG is completely free to browse. We earn affiliate commissions when you buy through our links. No paywalls, no subscriptions required from you.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="ft">
+      <div>
+        <div class="f-brand">DMAG</div>
+        <p class="f-desc">Curated digital products for creators and entrepreneurs. Real tools, honest takes.</p>
+        <div class="f-soc">
+          <a href="https://instagram.com/d.mag.1" target="_blank" rel="noopener">📷 Instagram</a>
+        </div>
+      </div>
+      <div>
+        <div class="f-col-title">Products</div>
+        <ul class="f-links">
+          <li><a href="#products" onclick="filterCat('AI Tools')">AI Tools</a></li>
+          <li><a href="#products" onclick="filterCat('Business Software')">Software</a></li>
+          <li><a href="#products" onclick="filterCat('Courses')">Courses</a></li>
+          <li><a href="#products" onclick="filterCat('Learning')">Learning</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="f-col-title">DMAG</div>
+        <ul class="f-links">
+          <li><a href="#email-bottom">Weekly Picks</a></li>
+          <li><a href="#trust">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    <div>
+  <div>
+  <div class="f-col-title">Legal</div>
+
+  <ul class="f-links">
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms of Use</a></li>
+    <li><a href="disclosure.html">Affiliate Disclosure</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+    </div>
+    <div class="f-bottom">
+      <span class="f-copy">© 2025 DMAG. All rights reserved.</span>
+      <div class="f-legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Disclosure</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ── CTA MAP ── */
+const ctaMap = {
+  'AI Tool':        { label:'Explore Tool',     icon:'→' },
+  'SaaS Platform':  { label:'Try Platform',     icon:'→' },
+  'Automation Tool':{ label:'Explore Platform', icon:'→' },
+  'Course':         { label:'View Course',      icon:'→' },
+  'Learning Resource':{ label:'Read Resource',  icon:'→' },
+  'Creator Software':{ label:'Open Tool',       icon:'→' },
+};
+function getCTA(type) { return ctaMap[type] || { label:'View Product', icon:'→' }; }
+
+/* ── RENDER CARDS ── */
+let allProducts = [];
+
+function buildCard(p) {
+  const cta = getCTA(p.type);
+  const hasBadge = p.badge ? `<div class="pc-badge">${p.badge}</div>` : '';
+  const hasImg = p.image
+    ? `<img class="pc-thumb-img" src="${p.image}" alt="${p.name}" loading="lazy"/>`
+    : `<div class="pc-emoji">${p.emoji||'📦'}</div>`;
+  const hasVideo = p.video
+    ? `<video class="pc-video" src="${p.video}" muted loop playsinline preload="none"></video>`
+    : '';
+  const tags = (p.tags||[]).slice(0,2).map(t=>`<span class="pc-tag-pill">${t}</span>`).join('');
+
+  const card = document.createElement('div');
+  card.className = 'pc fu';
+  card.dataset.cat = p.category;
+  card.dataset.tid = p.trackingId || '';
+  card.innerHTML = `
+    <div class="pc-thumb">
+      ${hasBadge}
+      ${hasImg}
+      ${hasVideo}
+    </div>
+    <div class="pc-body">
+      <div class="pc-type">${p.type||p.category}</div>
+      <div class="pc-name">${p.name}</div>
+      <div class="pc-desc">${p.description}</div>
+      <div class="pc-foot">
+        <div class="pc-tags">${tags}</div>
+        <a href="${p.link}" target="_blank" rel="noopener" class="pc-cta" onclick="trackClick(event,'${p.trackingId||p.name}')">
+          ${cta.label} <span class="cta-arrow">${cta.icon}</span>
+        </a>
+      </div>
+    </div>`;
+
+  // Video hover logic (desktop only)
+  const vid = card.querySelector('.pc-video');
+  if (vid) {
+    let timer;
+    const playVideo = () => {
+      vid.load();
+      timer = setTimeout(() => {
+        vid.play().then(() => vid.classList.add('playing')).catch(()=>{});
+      }, 2200);
+    };
+    const stopVideo = () => {
+      clearTimeout(timer);
+      vid.pause(); vid.currentTime = 0;
+      vid.classList.remove('playing');
+    };
+    // Auto-start after 2.5s on mobile (no hover)
+    if (window.matchMedia('(hover:none)').matches) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => { if(e.isIntersecting) playVideo(); else stopVideo(); });
+      }, { threshold: 0.6 });
+      io.observe(card);
+    } else {
+      card.addEventListener('mouseenter', playVideo);
+      card.addEventListener('mouseleave', stopVideo);
+    }
+  }
+  return card;
+}
+
+function renderProducts(list) {
+  const grid = document.getElementById('pgrid');
+  grid.innerHTML = '';
+  list.forEach(p => {
+    const card = buildCard(p);
+    grid.appendChild(card);
+  });
+  grid.querySelectorAll('.fu').forEach(el => observer.observe(el));
+}
+
+function filterCat(cat, btn) {
+  if (btn) {
+    document.querySelectorAll('.cf').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+  trackEvent('filter_click', { category: cat });
+  renderProducts(cat === 'all' ? allProducts : allProducts.filter(p => p.category === cat));
+}
+
+/* ── INLINE PRODUCTS DATA ──
+   عدّل هنا مباشرة لما بتفتح الملف من جهازك
+   لما ترفع على Netlify، الـ fetch هيشتغل أوتوماتيك من products.json
+── */
+const INLINE_PRODUCTS = [
+  { name:"TubeMagic", category:"AI Tools", type:"AI Tool", audience:"creators", tags:["youtube","ai","content","video"], description:"Find YouTube ideas, titles, and scripts in minutes. No more blank pages.", image:"assets/tubemagic.png", video:"", link:"https://tubemagic.com/ds#aff=beero495b6f1", featured:true, badge:"Editor's Pick", trackingId:"tubemagic_001" },
+  { name:"Outreachly AI", category:"AI Tools", type:"SaaS Platform", audience:"marketers", tags:["outreach","ai"], description:"Automate cold outreach with AI. Focus on closing, not chasing.", image:"", video:"", link:"https://www.checkout-ds24.com/redir/640883/beero495b6f1/", featured:true, badge:"", trackingId:"outreachly_001" },
+  { name:"FunnelCockpit", category:"Business Software", type:"Automation Tool", audience:"entrepreneurs", tags:["funnel","email"], description:"Funnels, landing pages, and email — one platform, no duct tape.", image:"", video:"", link:"https://www.digistore24.com/redir/98201/beero495b6f1/", featured:true, badge:"", trackingId:"funnelcockpit_001" },
+  { name:"Prompt Engineering for Developers", category:"Learning", type:"Learning Resource", audience:"developers", tags:["prompting","ai"], description:"The most underrated developer skill right now. Learn it properly.", image:"", video:"", link:"https://shop.tinztwinshub.com/l/prompt-engineering-for-developers/#aff=beero495b6f1", featured:false, badge:"", trackingId:"prompteng_001" },
+  { name:"Branding with Generative AI", category:"Courses", type:"Course", audience:"creators", tags:["branding","ai"], description:"Build a brand identity using AI tools that looks intentional, not generic.", image:"", video:"", link:"https://www.checkout-ds24.com/redir/633601/beero495b6f1/", featured:false, badge:"", trackingId:"branding_ai_001" }
+];
+
+async function loadProducts() {
+  try {
+    const r = await fetch('products.json');
+    if (!r.ok) throw new Error('no server');
+    allProducts = await r.json();
+  } catch(e) {
+    // بيستخدم البيانات الجوه الكود لما مفيش سيرفر
+    allProducts = INLINE_PRODUCTS;
+  }
+  renderProducts(allProducts);
+}
+
+/* ── SCROLL ANIMATIONS ── */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) setTimeout(() => e.target.classList.add('in'), i * 55);
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fu').forEach(el => observer.observe(el));
+
+/* ── FAQ ── */
+function toggleFaq(item) {
+  const open = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!open) item.classList.add('open');
+}
+
+/* ── FORMS ── */
+const FORMSPREE_ID = 'xkoewjay'; // ← replace with your Formspree ID
+
+async function handleForm(e, type) {
+  e.preventDefault();
+  const form = e.target;
+  const data = new FormData(form);
+  // Add device info
+  data.append('device', window.innerWidth < 768 ? 'mobile' : 'desktop');
+  data.append('referrer', document.referrer || 'direct');
+
+  try {
+    await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      method:'POST', body:data, headers:{'Accept':'application/json'}
+    });
+  } catch(err) { /* still show success */ }
+
+  document.getElementById(`f${type[0]}-wrap`).style.display = 'none';
+  document.getElementById(`fs-${type}`).classList.add('show');
+  trackEvent('form_submit', { form: type });
+}
+
+/* ── ANALYTICS ── */
+function trackEvent(name, props = {}) {
+  // Google Analytics 4
+  if (typeof gtag !== 'undefined') gtag('event', name, props);
+  // Plausible
+  if (typeof plausible !== 'undefined') plausible(name, { props });
+  // Console fallback
+  console.log('[DMAG]', name, props);
+}
+
+function trackClick(e, id) {
+  trackEvent('product_click', { product: id, url: e.currentTarget.href });
+}
+
+/* ── NAV ── */
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+function toggleNav() {
+  const ul = document.querySelector('.nav-links');
+  ul.classList.toggle('open');
+}
+
+// Close nav when a link is clicked
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.remove('open');
+  });
+});
+
+/* ── INIT ── */
+loadProducts();
+</script>
+</body>
+</html>
