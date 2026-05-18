@@ -1,0 +1,72 @@
+[
+  {
+    "name": "TubeMagic",
+    "category": "AI Tools",
+    "type": "AI Tool",
+    "audience": "creators",
+    "tags": ["youtube", "ai", "content", "video"],
+    "description": "Find YouTube ideas, titles, and scripts in minutes. No more blank pages.",
+    "image": "assets/tubemagic.png",
+    "video": "",
+    "link": "https://tubemagic.com/ds#aff=beero495b6f1",
+    "featured": true,
+    "badge": "",
+    "trackingId": "tubemagic_001"
+  },
+  {
+    "name": "Outreachly AI",
+    "category": "AI Tools",
+    "type": "SaaS Platform",
+    "audience": "marketers",
+    "tags": ["outreach", "ai", "automation", "email"],
+    "description": "Automate cold outreach with AI. Focus on closing, not chasing.",
+    "image": "assets/outreachlyai.png",
+    "video": "",
+    "link": "https://www.checkout-ds24.com/redir/640883/beero495b6f1/",
+    "featured": true,
+    "badge": "",
+    "trackingId": "outreachly_001"
+  },
+  {
+    "name": "FunnelCockpit",
+    "category": "Business Software",
+    "type": "Automation Tool",
+    "audience": "entrepreneurs",
+    "tags": ["funnel", "landing-page", "email", "all-in-one"],
+    "description": "Funnels, landing pages, and email — one platform, no duct tape.",
+    "image": "assets/funnelcockpit.png",
+    "video": "",
+    "link": "https://www.digistore24.com/redir/98201/beero495b6f1/",
+    "featured": true,
+    "badge": "",
+    "trackingId": "funnelcockpit_001"
+  },
+  {
+    "name": "Prompt Engineering for Developers",
+    "category": "Learning",
+    "type": "Learning Resource",
+    "audience": "developers",
+    "tags": ["prompting", "ai", "developer", "skill"],
+    "description": "The most underrated developer skill right now. Learn it properly.",
+    "image": "assets/tinztwinshub.png",
+    "video": "",
+    "link": "https://shop.tinztwinshub.com/l/prompt-engineering-for-developers/#aff=beero495b6f1",
+    "featured": false,
+    "badge": "",
+    "trackingId": "prompteng_001"
+  },
+  {
+    "name": "Branding with Generative AI",
+    "category": "Courses",
+    "type": "Course",
+    "audience": "creators",
+    "tags": ["branding", "ai", "design", "generative"],
+    "description": "Build a brand identity using AI tools that looks intentional, not generic.",
+    "image": "assets/BrandingwithGenerativeAI.png",
+    "video": "",
+    "link": "https://www.checkout-ds24.com/redir/633601/beero495b6f1/",
+    "featured": false,
+    "badge": "",
+    "trackingId": "branding_ai_001"
+  }
+]
